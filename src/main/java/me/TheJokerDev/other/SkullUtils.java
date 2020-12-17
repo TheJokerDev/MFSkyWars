@@ -3,6 +3,7 @@ package me.TheJokerDev.other;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.mojang.authlib.GameProfile;
+import com.mojang.authlib.properties.Property;
 import me.TheJokerDev.skywars.SkyWars;
 import org.bukkit.Bukkit;
 import org.bukkit.OfflinePlayer;
