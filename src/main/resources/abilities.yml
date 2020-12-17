@@ -1,0 +1,461 @@
+
+# enable or disable abilities on the server
+enabled: true
+# Don't edit this value
+configVersion: 2
+menu:
+  lore:
+    price: '&6Price: %price% points'
+    disabled: '&8&lDISABLED'
+    clickto:
+      # Click ability icon to enable
+      enable: '&6Click to enable'
+      # Click ability icon to disable
+      disable: '&6Click to disable'
+    status:
+      # Level item lore status
+      purchase: '&6Click to purchase this ability upgrade!'
+      afford: '&cYou cannot afford this ability!'
+      purchased: '&cAlready purchased!'
+      unavailable: '&cYou cannot purchase this item yet!'
+      disabled: '&6Click the icon to the left to enable'
+    levels:
+      # Level enabled item format
+      enabled:
+        - '%level-desc%'
+        - ''
+        - '%price-format%'
+        - ''
+        - '%status-format%'
+      # Level disabled item format
+      disabled:
+        - '%level-desc%'
+        - ''
+        - '%disabled%'
+        - '%status-format%'
+  item:
+    status:
+      # item displayed in menu ID:DATA,AMOUNT
+      purchase: 95:4,1
+      # item displayed in menu ID:DATA,AMOUNT
+      afford: 95:14,1
+      # item displayed in menu ID:DATA,AMOUNT
+      purchased: 95:5,1
+      # item displayed in menu ID:DATA,AMOUNT
+      unavailable: 95:14,1
+      # item displayed in menu ID:DATA,AMOUNT
+      disabled: 95:8,1
+    # Item/Ability level
+    level: level %number%
+abilities:
+  triple_arrow:
+    # enable or disable this ability
+    enabled: true
+    # ability title/name
+    name: '&aTriple arrow shot'
+    # ability description item
+    desc:
+      - '&7Shoot 3 arrows at the same time'
+    # item displayed in menu ID:DATA,AMOUNT
+    item: 262,3
+    # levels description displayed in menu
+    levels_desc:
+      - '&7Have a %chance%% chance of shooting 3 arrows'
+      - '&7at the same time'
+    level:
+      '1':
+        price: 50
+        chance: 4
+      '2':
+        price: 100
+        chance: 6
+      '3':
+        price: 200
+        chance: 8
+      '4':
+        price: 1000
+        chance: 10
+      '5':
+        price: 2000
+        chance: 12
+      '6':
+        price: 5000
+        chance: 14
+      '7':
+        price: 10000
+        chance: 16
+      '8':
+        price: 20000
+        chance: 18
+  adrenaline_boost:
+    # enable or disable this ability
+    enabled: true
+    # ability title/name
+    name: '&aAdrenaline boost'
+    # ability description item
+    desc:
+      - '&7When you get hurt have the chance to get a speed boost'
+    # item displayed in menu ID:DATA,AMOUNT
+    item: 373,1
+    # levels description displayed in menu
+    levels_desc:
+      - '&7Have a %chance%% chance of getting a speed'
+      - '&7boost when you get hurt'
+    level:
+      '1':
+        price: 50
+        chance: 4
+      '2':
+        price: 100
+        chance: 6
+      '3':
+        price: 200
+        chance: 8
+      '4':
+        price: 1000
+        chance: 10
+      '5':
+        price: 2000
+        chance: 12
+      '6':
+        price: 5000
+        chance: 14
+      '7':
+        price: 10000
+        chance: 16
+      '8':
+        price: 20000
+        chance: 18
+  feather_weight:
+    # enable or disable this ability
+    enabled: true
+    # ability title/name
+    name: '&aFeather weight'
+    # ability description item
+    desc:
+      - '&7Take less fall damage'
+    # item displayed in menu ID:DATA,AMOUNT
+    item: 288,1
+    # levels description displayed in menu
+    levels_desc:
+      - '&7Take %value%% less fall damage %chance%%'
+      - '&7of the time'
+    level:
+      '1':
+        price: 50
+        chance: 4
+        value: 50
+      '2':
+        price: 100
+        chance: 8
+        value: 50
+      '3':
+        price: 200
+        chance: 12
+        value: 50
+      '4':
+        price: 1000
+        chance: 16
+        value: 50
+      '5':
+        price: 2000
+        chance: 20
+        value: 50
+      '6':
+        price: 5000
+        chance: 24
+        value: 50
+      '7':
+        price: 10000
+        chance: 28
+        value: 50
+      '8':
+        price: 20000
+        chance: 32
+        value: 50
+  aggressive_mode:
+    # enable or disable this ability
+    enabled: true
+    # ability title/name
+    name: '&aAggressive mode'
+    # ability description item
+    desc:
+      - '&7Do more damage when you have less'
+      - '&7than 5 hearts'
+    # item displayed in menu ID:DATA,AMOUNT
+    item: 267,1
+    # levels description displayed in menu
+    levels_desc:
+      - '&7When you have less than 5 hearts you'
+      - '&7inflict %value%% more damage %chance%% of the time'
+    level:
+      '1':
+        price: 50
+        chance: 2
+        value: 50
+      '2':
+        price: 100
+        chance: 4
+        value: 50
+      '3':
+        price: 200
+        chance: 6
+        value: 50
+      '4':
+        price: 1000
+        chance: 8
+        value: 50
+      '5':
+        price: 2000
+        chance: 10
+        value: 50
+      '6':
+        price: 5000
+        chance: 12
+        value: 50
+      '7':
+        price: 10000
+        chance: 14
+        value: 50
+      '8':
+        price: 20000
+        chance: 16
+        value: 50
+  arrow_tank:
+    # enable or disable this ability
+    enabled: true
+    # ability title/name
+    name: '&aArrow tank skin'
+    # ability description item
+    desc:
+      - '&7Take less damage from arrows'
+    # item displayed in menu ID:DATA,AMOUNT
+    item: 307,1
+    # levels description displayed in menu
+    levels_desc:
+      - '&7Have a %chance%% chance of taking %value%%'
+      - '&7less projectile damage'
+    level:
+      '1':
+        price: 50
+        chance: 4
+        value: 50
+      '2':
+        price: 100
+        chance: 6
+        value: 50
+      '3':
+        price: 200
+        chance: 8
+        value: 50
+      '4':
+        price: 1000
+        chance: 10
+        value: 50
+      '5':
+        price: 2000
+        chance: 12
+        value: 50
+      '6':
+        price: 5000
+        chance: 14
+        value: 50
+      '7':
+        price: 10000
+        chance: 16
+        value: 50
+      '8':
+        price: 20000
+        chance: 18
+        value: 50
+  mining_luck:
+    # enable or disable this ability
+    enabled: true
+    # ability title/name
+    name: '&aMining luck'
+    # ability description item
+    desc:
+      - '&7Mining skill is increased so you can get'
+      - '&7more from each ore'
+    # item displayed in menu ID:DATA,AMOUNT
+    item: 278,1
+    # levels description displayed in menu
+    levels_desc:
+      - '&7Have a %chance%% chance of getting %value% of an'
+      - '&7resource wjem you mine and ore'
+    level:
+      '1':
+        price: 25
+        chance: 4
+        value: 2
+      '2':
+        price: 50
+        chance: 8
+        value: 2
+      '3':
+        price: 100
+        chance: 12
+        value: 2
+      '4':
+        price: 500
+        chance: 16
+        value: 2
+      '5':
+        price: 1000
+        chance: 20
+        value: 2
+      '6':
+        price: 2500
+        chance: 24
+        value: 2
+      '7':
+        price: 5000
+        chance: 28
+        value: 2
+      '8':
+        price: 10000
+        chance: 32
+        value: 2
+  woodchopping_luck:
+    # enable or disable this ability
+    enabled: true
+    # ability title/name
+    name: '&aWoodchopping luck'
+    # ability description item
+    desc:
+      - '&7Woodchopping skill is increased so you can get'
+      - '&7more from logs from a single piece'
+    # item displayed in menu ID:DATA,AMOUNT
+    item: 279,1
+    # levels description displayed in menu
+    levels_desc:
+      - '&7Have a %chance%% chance of getting %value% logs'
+    level:
+      '1':
+        price: 25
+        chance: 4
+        value: 2
+      '2':
+        price: 50
+        chance: 8
+        value: 2
+      '3':
+        price: 100
+        chance: 12
+        value: 2
+      '4':
+        price: 500
+        chance: 16
+        value: 2
+      '5':
+        price: 1000
+        chance: 20
+        value: 2
+      '6':
+        price: 2500
+        chance: 24
+        value: 2
+      '7':
+        price: 5000
+        chance: 28
+        value: 2
+      '8':
+        price: 10000
+        chance: 32
+        value: 2
+  pirate:
+    # enable or disable this ability
+    enabled: true
+    # ability title/name
+    name: '&aPirate'
+    # ability description item
+    desc:
+      - '&7Find hidden treasures in dirt'
+    # item displayed in menu ID:DATA,AMOUNT
+    item: 3,1
+    # Possible treasure items
+    # Format: MIN-AMOUNT MAX-AMOUNT ITEM:DATA
+    treasures:
+      - 1 1 apple
+      - 2 12 arrow
+      - 2 2 egg
+      - 1 1 stone_sword
+      - 2 6 wood
+      - 2 6 cobblestone
+      - 3 6 snow_ball
+      - 1 1 leather_boots
+    # levels description displayed in menu
+    levels_desc:
+      - '&7Find treasure in %chance%% of dirt'
+    level:
+      '1':
+        price: 25
+        chance: 4
+      '2':
+        price: 50
+        chance: 6
+      '3':
+        price: 100
+        chance: 8
+      '4':
+        price: 500
+        chance: 10
+      '5':
+        price: 1000
+        chance: 12
+      '6':
+        price: 2500
+        chance: 14
+      '7':
+        price: 5000
+        chance: 16
+      '8':
+        price: 10000
+        chance: 18
+  fire_resistance:
+    # enable or disable this ability
+    enabled: true
+    # ability title/name
+    name: '&aFire resistance'
+    # ability description item
+    desc:
+      - '&7Take less fire damage'
+    # item displayed in menu ID:DATA,AMOUNT
+    item: 259,1
+    # levels description displayed in menu
+    levels_desc:
+      - '&7Take %value%% less fire and lava damage'
+      - '&7%chance%% of the time'
+    level:
+      '1':
+        price: 50
+        chance: 4
+        value: 50
+      '2':
+        price: 100
+        chance: 8
+        value: 50
+      '3':
+        price: 200
+        chance: 12
+        value: 50
+      '4':
+        price: 1000
+        chance: 16
+        value: 50
+      '5':
+        price: 2000
+        chance: 20
+        value: 50
+      '6':
+        price: 5000
+        chance: 24
+        value: 50
+      '7':
+        price: 10000
+        chance: 28
+        value: 50
+      '8':
+        price: 20000
+        chance: 32
+        value: 50

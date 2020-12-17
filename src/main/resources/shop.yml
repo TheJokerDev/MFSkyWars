@@ -1,0 +1,133 @@
+# ---------------------------------------------------------------- #
+# 
+# IMPORTANT: ALL MENU NAMES (SUB MENUS AND MAIN MENU) HAVE TO BE DIFFERENT
+# 
+# ---------------------------------------------------------------- #
+
+
+# Don't edit this value
+config_version: 2
+
+shopingame: true
+
+item:
+  # false (Shop menu and Item disabled), true (Shop menu and Item enabled)
+  enabled: false
+  # Slot where the item will be placed (Recommended: 0-8)
+  inventorySlot: 1
+  # ID:Data or NAME:Data (If Data equals to 0 is not necessary to write it)
+  item: 340
+  # Item name
+  name: '&e&lShop'
+  # lore: Item lore or description
+  lore:
+    - '&7Click me to open the shop'
+    - '&7to buy lots of cool stuff for SkyWars'
+
+# All Shop menu size (rows) (MAX VALUE: 6)
+shop_size: 6
+
+main:
+  # main_name: Main Menu Title
+  main_name: '&fSkyWars Shop'
+  items:
+    '51':
+      item: 340
+      name: '&9Close menu'
+      lore:
+        - '&7Close the shopping'
+        - '&7menu.'
+      action: CLOSE
+
+all:
+  '49':
+    item: 395
+    name: '&6Total points: &a%coins%'
+    lore:
+      - '&5Earn point from'
+      - '&5playing games'
+    action: CLOSE
+
+allsubmenus:
+  '50':
+    item: 340
+    name: '&9Back'
+    lore:
+      - '&7Go back to the shopping menu'
+    action: MAIN
+
+submenus:
+  '21':
+    sub_name: '&fSkyWars Kits'
+    item: 265
+    name: '&eSkyWars Kits'
+    lore:
+      - '&7Purchase SkyWars kits'
+    content:
+      '11':
+        item: KIT,Fisherman
+      '12':
+        item: KIT,Lumberjack
+      '13':
+        item: KIT,Spiderman
+      '14':
+        item: KIT,Blacksmith
+      '15':
+        item: KIT,Digger
+      '16':
+        item: KIT,Redstone_master
+      '17':
+        item: KIT,Farmer
+      '20':
+        item: KIT,Chicken
+      '21':
+        item: KIT,Joker
+      '22':
+        item: KIT,Scout
+      '23':
+        item: KIT,Pyromaniac
+      '24':
+        item: KIT,Archer
+      '25':
+        item: KIT,Enchanter
+      '26':
+        item: KIT,Enderman
+      '30':
+        item: KIT,Iron_golem
+      '31':
+        item: KIT,Healer
+      '32':
+        item: KIT,Bomber
+      '33':
+        item: KIT,Swordsman
+
+submenu:
+  abilities:
+    # Enable or disable Abilities in shop menu
+    enabled: true
+    # Abilities submenu name
+    name: '&fSkyWars Abilities - Page %number%'
+    # Abilities main menu item slot
+    slot: 25
+    item:
+      # Abilities item name
+      name: '&eSkyWars Abilities'
+      # Abilities item
+      item: 301
+      # Abilities item description
+      lore:
+        - '&7Purchase SkyWars abilities'
+    next:
+      # Abilities next page item
+      item: 338
+      # Abilities next page item name
+      name: '&6Next page'
+      # Abilities next page item slot
+      slot: 54
+    previous:
+      # Abilities previous page item
+      item: 338
+      # Abilities previous page item name
+      name: '&6Previous page'
+      # Abilities previous page item slot
+      slot: 46

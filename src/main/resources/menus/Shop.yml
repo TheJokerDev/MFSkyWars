@@ -1,0 +1,117 @@
+title: '&b&l・&8Menu de SkyWars'
+rows: 6
+
+items:
+
+extraItems:
+  kits:
+    material: IRON_INGOT
+    slot: 12
+    data: 0
+    amount: 1
+    meta:
+      name: '&bKits'
+      lore:
+        - '&7Abre el menú de kits'
+    actions:
+      - '[player]/sw open menu ShopKits'
+  abilities:
+    material: GOLD_BOOTS
+    slot: 14
+    data: 0
+    amount: 1
+    meta:
+      name: '&bHabilidades'
+      lore:
+        - '&7Abre el menú de habilidades'
+    actions:
+      - '[player]/sw open menu abilities1'
+  boxes:
+    material: STAINED_GLASS
+    slot: 28
+    data: 9
+    amount: 1
+    meta:
+      name: '&bCajas'
+      lore:
+        - '&7Abre el menú de cajas'
+    actions:
+      - '[player]/sw open menu settingsBoxes'
+  winEffects:
+    material: FIREWORK
+    slot: 30
+    data: 0
+    amount: 1
+    meta:
+      name: '&bEfectos de Victoria'
+      lore:
+        - '&7Abre el menú de efectos de victoria'
+    actions:
+      - '[player]/sw open menu settingsWinEffects'
+  arrowParticles:
+    material: ARROW
+    slot: 32
+    data: 0
+    amount: 1
+    meta:
+      name: '&bPartículas de Flecha'
+      lore:
+        - '&7Abre el menú de partículas'
+    actions:
+      - '[player]/sw open menu settingsTrails'
+  killSounds:
+    material: NOTE_BLOCK
+    slot: 34
+    data: 0
+    amount: 1
+    meta:
+      name: '&bSonidos de Muerte'
+      lore:
+        - '&7Abre el menú de sonidos de muerte'
+    actions:
+      - '[close]'
+      - '[message]&cEn desarrollo...'
+  paneles:
+    material: STAINED_GLASS_PANE
+    slot: 45,46,52,53
+    data: 3
+    amount: 1
+    meta:
+      name: ' '
+      lore:
+    actions:
+      - '[close]'
+  close:
+    material: BARRIER
+    slot: 49
+    data: 0
+    amount: 1
+    meta:
+      name: '&cCerrar'
+      lore:
+        - '&7Click para cerrar'
+    actions:
+      - '[close]'
+  stats:
+    material: SKULL_ITEM
+    slot: 48
+    data: 3
+    amount: 1
+    skull: 'name-%player_name%'
+    meta:
+      name: '&bTus estadísticas'
+      lore:
+        - '&b● &7Ganadas&7: &b%skywars_stats_wins%'
+        - '&b● &7Bajas&7: &b%skywars_stats_kills%'
+        - '&b● &7Muertes&7: &b%skywars_stats_deaths%'
+        - '&b● &7Jugadas&7: &b%skywars_stats_played%'
+        - '&b● &7Flechas arrojadas&7: &b%skywars_stats_arrow_shot%'
+        - '&b● &7Flechas acertadas&7: &b%skywars_stats_arrow_hit%'
+        - '&b● &7Bloques rotos&7: &b%skywars_stats_blocks_broken%'
+        - '&b● &7Bloques puestos&7: &b%skywars_stats_blocks_placed%'
+        - '&b● &7Distancia caminada&7: &b%skywars_stats_distance_walked%'
+        - '&b● &7Tiempo jugado&7: &b%skywars_stats_time_played%'
+        - ''
+        - '&b● &7Tus puntos: &b%skywars_coins%'
+    actions:
+      - '[close]'

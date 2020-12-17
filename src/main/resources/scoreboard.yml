@@ -1,0 +1,125 @@
+# VARIABLES:
+#     - Player name:         %player%, %username%
+#     - Player Coins:        %coins%, %points%
+#     - Player Deaths:       %sw-deaths%, %sw-d%, %stats-deaths%
+#     - Player Kills:        %sw-kills%, %sw-k%, %stats-kills%
+#     - Player Wins:         %sw-wins%, %sw-w%, %stats-wins%
+#     - Games Played:        %sw-played%, %sw-p%, %stats-played%
+#     - Arrow Shot:          %sw-arrow-shot%, %sw-as%, %stats-arrow-shot%
+#     - Arrow Hit:           %sw-arrow-hit%, %sw-ah%, %stats-arrow-hit%
+#     - Blocks Broken:       %sw-blocks-broken%, %sw-bb%, %stats-blocks-broken%
+#     - Block Placed:        %sw-blocks-placed%, %sw-bp%, %stats-blocks-placed%
+#     - Distance Walked:     %sw-distance-walked%, %sw-dw%, %stats-distance-walked%
+#     - Time Played:         %sw-time-played%, %sw-tp%, %stats-time-played%
+#     - Kill/Death Ratio:    %sw-kills-deaths%, %sw-kdr%
+#     - Selected Glass:      %glass%
+#     - Selected Kit:        %kit%
+#     - Selected WinEffect:  %wineffect%
+# SCOREBOARD VARIABLES:
+#     - Empty line:          %empty%
+# GAME SCOREBOARD VARIABLES:
+#     - Arena Name:          %arena-name%, %a-name%
+#     - Arena Max Players:   %arena-max-players%, %a-max-p%
+#     - Players in Arena:    %arena-ingame-players%, %a-ingame-p%
+#     - Current event title: %arena-event-title% %a-event-title%
+#     - Current event time:  %arena-event-time% %a-event-time%
+#     - Current kill streak: %sw-kill-streak% %sw-ks%
+# SCOREBOARD CONDITIONALS:
+#     <a-events> Check if the arena has events enabled
+#     <a-ingame> Check if the arena is in game
+
+
+lobby:
+  # Enable or disable Lobby Scoreboard
+  enabled: true
+  # Lobby Scoreboard blacklist (Disabled worlds)
+  disabledWorlds:
+    - test1
+    - test2
+  # Lobby Scoreboard title
+  title: '&e&lSkyWars'
+  # Lobby Scoreboard lines (Max: 16)
+  lines:
+    - '&5Coins:'
+    - '&a%coins%'
+    - '%empty%'
+    - '&6Server Name'
+
+game:
+  waiting:
+    # Game Scoreboard title
+    title: '&e&lSkyWars'
+    # Game Scoreboard lines (Max: 16)
+    lines:
+      - '<a-ingame><a-events>&5%a-event-title% in:'
+      - <a-ingame><a-events>&a%a-event-time%
+      - <a-ingame><a-events>%empty%
+      - '&5Map:'
+      - '&a%a-name%'
+      - '%empty%'
+      - '&5Players:'
+      - '&a%a-ingame-p%/%a-max-p%'
+      - '%empty%'
+      - '&6Server Name'
+  starting:
+    # Game Scoreboard title
+    title: '&e&lSkyWars'
+    # Game Scoreboard lines (Max: 16)
+    lines:
+      - '<a-ingame><a-events>&5%a-event-title% in:'
+      - <a-ingame><a-events>&a%a-event-time%
+      - <a-ingame><a-events>%empty%
+      - '&5Map:'
+      - '&a%a-name%'
+      - '%empty%'
+      - '&5Players:'
+      - '&a%a-ingame-p%/%a-max-p%'
+      - '%empty%'
+      - '&6Server Name'
+  ingame:
+    # Game Scoreboard title
+    title: '&e&lSkyWars'
+    # Game Scoreboard lines (Max: 16)
+    lines:
+      - '<a-ingame><a-events>&5%a-event-title% in:'
+      - <a-ingame><a-events>&a%a-event-time%
+      - <a-ingame><a-events>%empty%
+      - '&5Map:'
+      - '&a%a-name%'
+      - '%empty%'
+      - '&5Players:'
+      - '&a%a-ingame-p%/%a-max-p%'
+      - '%empty%'
+      - '&6Server Name'
+  ending:
+    # Game Scoreboard title
+    title: '&e&lSkyWars'
+    # Game Scoreboard lines (Max: 16)
+    lines:
+      - '<a-ingame><a-events>&5%a-event-title% in:'
+      - <a-ingame><a-events>&a%a-event-time%
+      - <a-ingame><a-events>%empty%
+      - '&5Map:'
+      - '&a%a-name%'
+      - '%empty%'
+      - '&5Players:'
+      - '&a%a-ingame-p%/%a-max-p%'
+      - '%empty%'
+      - '&6Server Name'
+
+hologram:
+  # Holographics Coords
+  locations: []
+  # Holographics Lines
+  lines:
+    - '&a%PLAYER%''s &7&k&l||&3&lSkyWars&7&k&l||&a statistics'
+    - '&aWins&7: &6%sw-w%'
+    - '&aKills&7: &6%sw-k%'
+    - '&aDeaths&7: &6%sw-d%'
+    - '&aGames played&7: &6%sw-p%'
+    - '&aArrows shot&7: &6%sw-as%'
+    - '&aArrows hit&7: &6%sw-ah%'
+    - '&aBlocks broken&7: &6%sw-bb%'
+    - '&aBlocks placed&7: &6%sw-bp%'
+    - '&aDistance walked&7: &6%sw-dw%'
+    - '&aTime played&7: &6%sw-tp%'

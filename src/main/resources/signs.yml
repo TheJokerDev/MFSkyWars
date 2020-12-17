@@ -1,0 +1,36 @@
+# SIGNS CONFIGURATION
+
+
+# Enable or disable rotation system (disabled by default)
+# If rotation is enabled the sign will select a random arena available, that means that your server can have 30 arenas and only 10 signs
+# and all arenas can be played without have one sign per arena
+rotation: false
+
+# Delay in ticks (20 Ticks = 1 Second) when the sign will search another game after being in-game (Only if rotation is enable)
+rotationDelay: 60
+
+# Enable or disable the change of the block depending of the arena state
+change_block: true
+
+format:
+  game:
+    - '&lSkyWars'
+    - '%state%'
+    - '&nMap: %map%'
+    - '&8%players%/%maxplayers%'
+  searching:
+    - '&l----------'
+    - SEARCHING
+    - GAMES
+    - '&l----------'
+
+# The block that will be placed on the wall depending of the arena state (change_block must be enabled)
+# Block Format: ITEM_NAME:DATA (If DATA is 0 you don't have to type it)
+state:
+  waiting: STAINED_GLASS:5
+  starting: STAINED_GLASS:4
+  full: STAINED_GLASS:10
+  ingame: STAINED_GLASS:14
+  searching: STAINED_GLASS
+
+signs: []

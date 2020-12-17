@@ -1,0 +1,311 @@
+#General Items for SkyWars
+GeneralItems:
+  Back:
+    material: BOOK
+    data: 0
+    meta:
+      name: '&9Regresar'
+      lore:
+        - '&7Regresar al menú anterior'
+  Close:
+    material: BARRIER
+    data: 0
+    meta:
+      name: '&cCerrar'
+      lore:
+        - '&7Cierra el menú'
+        - '&7actual.'
+  Coins:
+    material: EMPTY_MAP
+    data: 0
+    meta:
+      name: '&aPuntos: &e<money>'
+      lore:
+        - '&7Gana puntos al'
+        - '&7jugar partidas'
+  Leave:
+    material: BARRIER
+    data: 0
+    meta:
+      name: '&cSalir'
+      lore:
+        - '&7Click para regresar'
+        - '&7a la lobby.'
+  RandomMap:
+    material: FIREWORK
+    data: 0
+    meta:
+      name: '&aMapa Aleatorio'
+      lore:
+        - '&7Click para entrar a un'
+        - '&7mapa aleatorio.'
+
+#Spectator items
+Spectator:
+  Tracker:
+    item:
+      material: COMPASS
+      data: 0
+      amount: 1
+      meta:
+        name: '&a&lTeletransportador&r &7(Click derecho)'
+        lore:
+          - '&7¡Haz click derecho para observar a otros jugadores!'
+    PlayersHead:
+      material: SKULL_ITEM
+      data: 3
+      meta:
+        name: '%luckperms_prefix%%player_name%'
+        lore:
+          - '&7Salud: &f%player_health_rounded%%'
+          - '&7Comida: &f%player_food_level%'
+          - ''
+          - '¡Click izquierdo para observar!'
+          - '¡Click derecho para reportar!'
+
+#Settings Items for SkyWars
+SettingsItems:
+  SettingsMenu:
+    material: DIAMOND
+    data: 0
+    meta:
+      name: '&6Ajustes de SkyWars'
+      lore:
+        - '&7Click para abrir'
+  BoxesMenu:
+    material: GLASS
+    data: 0
+    meta:
+      name: '&bCajas'
+      lore:
+        - '&7Cambia tu caja al'
+        - '&7entrar en partida.'
+  WinEffectsMenu:
+    material: FIREWORK
+    data: 0
+    meta:
+      name: '&bEfectos de Victoria'
+      lore:
+        - '&7Cambia tu efecto al'
+        - '&7ganar una partida'
+  TrailsMenu:
+    material: ARROW
+    data: 0
+    meta:
+      name: '&bPartículas de Flechas'
+      lore:
+        - '&7Cambia la partícula'
+        - '&7al tirar flechas.'
+  CurrentBox:
+    material: GLASS
+    data: 0
+    glow: true
+    meta:
+      name: '&aCaja Seleccionada: &e<boxName>'
+      lore:
+        - '&7Tienes seleccionada la Caja:'
+        - ' '
+        - '&e<boxName>'
+  WinEffect:
+    material: FIREWORK
+    data: 0
+    glow: true
+    meta:
+      name: '&7Seleccionado: &e<winEffect>'
+      lore:
+        - ' '
+        - '<winEffectLore>'
+  Trail:
+    material: BEDROCK
+    data: 0
+    glow: true
+    meta:
+      name: '&7Seleccionado: &e<trail>'
+      lore:
+        - ' '
+        - '<trailLore>'
+  ClearBox:
+    material: BARRIER
+    data: 0
+    meta:
+      name: '&cRestablecer'
+      lore:
+        - '&7Click para restablecer'
+        - '&7tu caja en partida.'
+  ClearWinEffect:
+    material: BARRIER
+    data: 0
+    meta:
+      name: '&cRestablecer'
+      lore:
+        - '&7Click para restablecer'
+        - '&7tu efecto al ganar.'
+  ClearTrail:
+    material: BARRIER
+    data: 0
+    meta:
+      name: '&cRestablecer'
+      lore:
+        - '&7Click para restablecer'
+        - '&7tus partículas de flecha.'
+
+#Shop Items for SkyWars
+ShopItems:
+  Kits:
+    material: IRON_INGOT
+    data: 0
+    meta:
+      name: '&eKits de SkyWars'
+      lore:
+        - '&7Compra los kits'
+        - '&7de SkyWars.'
+  Abilities:
+    material: LEATHER_BOOTS
+    data: 0
+    meta:
+      name: '&eHabilidades de SkyWars'
+      lore:
+        - '&7Compra habilidades'
+        - '&7en SkyWars.'
+  ExclusiveKits:
+    material: GOLDEN_APPLE
+    data: 1
+    meta:
+      name: '&b&nKits Exclusivos'
+      lore:
+        - '&7Click para abrir el selector'
+        - '&7de kits Exclusivos para'
+        - '&7quienes tienen rango.'
+  ClearKit:
+    material: BARRIER
+    data: 0
+    meta:
+      name: '&cRestablecer'
+      lore:
+        - '&7Click para borrar el'
+        - '&7kit seleccionado.'
+  CurrentKit:
+    material: PAPER
+    data: 0
+    glow: true
+    meta:
+      name: '&aKit Seleccionado: &e<kit>'
+      lore:
+        - ' '
+        - '<kitLore>'
+
+#Vote Items for SkyWars
+VoteItems:
+  Events:
+    material: NETHER_STAR
+    data: 0
+    meta:
+      name: '&6Eventos'
+      lore:
+        - '&7Vota por eventos'
+  Projectiles:
+    material: ARROW
+    data: 0
+    meta:
+      name: '&2Proyectiles'
+      lore:
+        - '&7Vota por proyectiles'
+  Scenarios:
+    material: GOLD_INGOT
+    data: 0
+    meta:
+      name: '&eEscenarios'
+      lore:
+        - '&7Vota por escenarios'
+  #Projectiles
+  NormalProjectiles:
+    material: BOW
+    data: 0
+    meta:
+      name: '&aProyectiles Normales'
+      lore:
+        - ' '
+        - '&e<votes> votos'
+  SoftBlocksProjectiles:
+    material: COBBLESTONE
+    data: 0
+    meta:
+      name: '&cDestructor de Bloques'
+      lore:
+        - ' '
+        - '&e<votes> votos'
+  NoProjectiles:
+    material: EGG
+    data: 0
+    meta:
+      name: '&7Sin Proyectiles'
+      lore:
+        - ' '
+        - '&e<votes> votos'
+  #Events
+  DragonEvent:
+    material: DRAGON_EGG
+    data: 0
+    meta:
+      name: '&2Dragón Bombardero'
+      lore:
+        - ' '
+        - '&e<votes> votos'
+  TnTRainEvent:
+    material: TNT
+    data: 0
+    meta:
+      name: '&cLluvia de TNT'
+      lore:
+        - ' '
+        - '&e<votes> votos'
+  WitherEvent:
+    material: SKULL_ITEM
+    data: 1
+    meta:
+      name: '&6Wither de la Muerte'
+      lore:
+        - ' '
+        - '&e<votes> votos'
+  ZombiesEvent:
+    material: SKULL_ITEM
+    data: 2
+    meta:
+      name: '&2Zombies Asesinos'
+      lore:
+        - ' '
+        - '&e<votes> votos'
+  BorderEvent:
+    material: BARRIER
+    data: 0
+    meta:
+      name: '&fBorde'
+      lore:
+        - ' '
+        - '&e<votes> votos'
+  #Scenarios
+  AntiCleanScenario:
+    material: GOLDEN_APPLE
+    data: 0
+    meta:
+      name: '&aAntiClean'
+      lore:
+        - ' '
+        - '&e<votes> votos'
+  NoFallScenario:
+    material: LEATHER_BOOTS
+    data: 0
+    meta:
+      name: '&9Pies de pluma'
+      lore:
+        - ' '
+        - '&e<votes> votos'
+  StrengthScenario:
+    material: POTION
+    data: 9
+    hideFlags: true
+    meta:
+      name: '&cFuerza'
+      lore:
+        - ' '
+        - '&e<votes> votos'

@@ -1,0 +1,190 @@
+# -------------------------------- #
+# 
+# SKYWARS
+# By TheJokerDev
+# Battle with players in the sky
+# 
+# -------------------------------- #
+
+
+# Check if exists a new update (RECOMMENDED YOU LEAVE TRUE)
+check_updates: true
+
+pluginname: 'SkyWars'
+
+# Debug mode
+# enable if you have some crash/error and need send me (CookLoco) the server log
+debug: false
+
+# Debug database (MySQL)
+# enable if you have some crash/error and need send me (CookLoco) the server log
+debug-database: false
+
+# Available languages:
+#       en: English (Default)
+#       es: Spanish
+#       nl: Dutch
+locale: en
+
+#Set the link of your store
+store: 'https://store.megarusher.com'
+
+# Rows/Lines from the Kit Menu (WAITING GAME)
+kitmenu_rows: 3
+
+# If is true, players with the permission (skywars.kit.KitName) can buy this kit
+kit_permission: false
+
+# Maximum time for every arena/game
+maxtime: 1200
+
+# Lobby coords [MultiArena/Lobby]
+# type /sw lobbyspawn to set the Lobby Spawn
+spawn: ''
+
+# Lobby server list for random tp (BUNGEECORD SERVERS)
+lobbies_servers:
+  - Lobby
+
+# max slots used per generated chest (IN GAME)
+max_items_types_chest: 15
+
+economy:
+  # Economy types:
+  #     Custom: included per default in SkyWars (HIGHLY RECOMMENDED)
+  #     Vault: hook with Vault and other plugin like Essentials or iConomy
+  #     PlayerPoints: hook with PlayerPoints
+  #     Craftconomy3: hook with CraftConomy3
+  #     Coins: hook with Coins https://www.spigotmc.org/resources/48536/ (RECOMMENDED)
+  mode: Custom
+  # Currency set when you has been configured CraftConomy3 (Default: Dollar)
+  craftconomy3_currency: Dollar
+
+reward:
+  # reward that receive every survivor when a player die
+  death: 1
+  # reward for kill some player
+  kill: 2
+  # reward for winner
+  win: 10
+  wincmd:
+    # Enable or disable winner commands (EXECUTED BY CONSOLE)
+    enabled: false
+    # Commands list (VARIABLES: %winner% , %map%)
+    # 	FORMAT: 'CHANCE/CMD'
+    # 	Example: 90/give %winner% minecraft:diamond_block 1
+    # 	CHANCE: 0-100
+    list:
+      - 20/money give %winner% 20
+      - 100/say %winner% won a game!
+
+item:
+  # Items in waiting Lobby, for message and translation go to the item section in messages files
+  # Format:   SLOT ITEM_NAME
+  # SLOT From 1 to 9 (hotbar)
+  # If you want to edit Shop item in Lobby go to shop.yml
+  kits: 1 PAPER
+  settings: 2 DIAMOND
+  vote: 3 EMPTY_MAP
+  exit: 9 BED
+
+menu:
+  kits:
+    unavailable:
+      # Enable or disable if should replace unavailable kit icon for some item (Default: false)
+      enabled: false
+      # ITEM_NAME:DATA
+      item: STAINED_GLASS_PANE:14
+
+mode:
+  # Plugin Modes:
+  #       BungeeMode: Only one game per server (better performance)
+  #       MultiArena: Unlimited games per server (underperforming with many games)
+  #       Lobby: Only Lobby System for Bungee Servers (before SkyWarsLobby)
+  plugin: MultiArena
+  # Auto Start when a game ends (BungeeMode)
+  bungee-autostart: true
+  # Select a random map from configured arenas
+  bungeerandom: true
+  # Select the same map all the time (BUNGEERANDOM MUST BE FALSE)
+  bungeemapset: default
+
+# BungeeMode setting for Sign System (MySQL REQUIRED)
+# enabled by default if the server is in BungeeMode, You will need a Lobby server
+# with SkyWars in Lobby mode for the Sign System (MySQL REQUIRED IN BOTH SERVERS)
+server:
+  # bungee name that correspond to this server (Only for Arena server)
+  bungeeid: SkyWars-1
+
+data:
+  # Types:
+  #     SQLite: Local File (Default)
+  #     MySQL: MySQL Server required
+  type: SQLite
+  mysql:
+    # MySQL server address/ip
+    server: localhost
+    # database name
+    db: SkyWars
+    # MySQL User
+    user: root
+    # MySQL Port
+    port: 3306
+    # MySQL password
+    password: password
+    tablename:
+      # Table name of player data
+      data: SkyWars_Data
+      # Table name of custom economy data
+      economy: SkyWars_Economy
+      # Table name of servers info
+      servers: SkyWars_Servers
+
+options:
+  # enable or disable pressure plate arena join.
+  pressureplate: true
+  # enable or disable weather in arena worlds
+  weather: false
+  # enable or disable mobs spawn in arena worlds
+  creaturespawn: false
+  # save inventory when player join to the game and restored when leave
+  saveInventory: true
+  # force teleport to spawn when a player join
+  forceLobbySpawn: true
+  # sequencial spawn points in arena
+  orderedSpawnPoints: true
+  # disable pvp in Lobby world
+  disablePvP-Outside-The-Arena: false
+  # disable all damage in Lobby
+  disableDamage-Outside-The-Arena: false
+  # enable or disable leave message when player leave from the server
+  leaveMessage: false
+  # enable or disable join message when player join to the server
+  joinMessage: false
+  # disable leave item (bed)
+  disableLeaveItem: false
+  # disable separated Tab per world (RECOMMEND YOU LEAVE FALSE FOR 1.8 & 1.9 SERVERS)
+  disablePerWorldTab: false
+  # disable separated chat per world
+  disablePerWorldChat: false
+  # disable spectator mode when player die
+  disableSpectatorMode-Death: false
+  # true: remove all cage, false: remove cage's floor
+  removeAllCageOnStart: true
+  # Enable or disable perWorldTab for players with the permisison: skywars.tab.bypass
+  perWorldTabBypass: false
+  # The time in seconds that CombatLog will act after a player takes damage from another
+  # Default: 3
+  combatLogTime: 3
+
+block:
+  commands:
+    # Available modes:
+    #       blacklist: block all commands in the list
+    #       whitelist: only allow commands in the list
+    mode: blacklist
+    # Commands blocked for players in game (in arena)
+    ingame:
+      - help
+      - spawn
+      - home

@@ -1,0 +1,4 @@
+name: SkyWarsBridge
+main: me.TheJokerDev.skyWars.SkyWarsBungee
+version: ${project.version}
+author: TheJokerDev

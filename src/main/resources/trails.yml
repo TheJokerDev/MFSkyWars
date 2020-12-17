@@ -1,0 +1,14 @@
+default: null
+trails:
+  Slime:
+    name: '&aSlime'
+    effect: SLIME
+    permission: mfsw.particle.slime
+    icon:
+      material: SLIME_BALL
+      data: 0
+      amount: 1
+      meta:
+        name: '&aSlime'
+        lore:
+          - '&7Solo rango'

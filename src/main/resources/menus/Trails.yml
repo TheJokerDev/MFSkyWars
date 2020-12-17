@@ -1,0 +1,60 @@
+title: '&b&l・&8Menu de SkyWars -> Trails'
+
+items:
+
+extraItems:
+  paneles:
+    material: STAINED_GLASS_PANE
+    slot: 45,46,52,53
+    data: 3
+    amount: 1
+    meta:
+      name: ' '
+      lore:
+    actions:
+      - '[close]'
+  close:
+    material: SKULL_ITEM
+    slot: 49
+    data: 3
+    amount: 1
+    skull: 'name-MHF_ArrowLeft'
+    meta:
+      name: '&bRegresar'
+      lore:
+        - '&7Click para regresar'
+    actions:
+      - '[player]/sw open lshop'
+  sintrail:
+    material: STAINED_GLASS_PANE
+    slot: 50
+    data: 14
+    amount: 1
+    meta:
+      name: '&cSin Trail'
+      lore:
+        - '&7No tienes ningún'
+        - '&7trail seleccionado'
+  stats:
+    material: SKULL_ITEM
+    slot: 48
+    data: 3
+    amount: 1
+    skull: 'name-%player_name%'
+    meta:
+      name: '&bTus estadísticas'
+      lore:
+        - '&b● &7Ganadas&7: &b%skywars_stats_wins%'
+        - '&b● &7Bajas&7: &b%skywars_stats_kills%'
+        - '&b● &7Muertes&7: &b%skywars_stats_deaths%'
+        - '&b● &7Jugadas&7: &b%skywars_stats_played%'
+        - '&b● &7Flechas arrojadas&7: &b%skywars_stats_arrow_shot%'
+        - '&b● &7Flechas acertadas&7: &b%skywars_stats_arrow_hit%'
+        - '&b● &7Bloques rotos&7: &b%skywars_stats_blocks_broken%'
+        - '&b● &7Bloques puestos&7: &b%skywars_stats_blocks_placed%'
+        - '&b● &7Distancia caminada&7: &b%skywars_stats_distance_walked%'
+        - '&b● &7Tiempo jugado&7: &b%skywars_stats_time_played%'
+        - ''
+        - '&b● &7Tus puntos: &b%skywars_coins%'
+    actions:
+      - '[close]'

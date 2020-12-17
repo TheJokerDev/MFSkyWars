@@ -1,0 +1,138 @@
+Messages:
+  Projectiles:
+    projectilesSelected: '&6Seleccionado proyectiles: &a%s'
+    playerVote: '&6¡&5%s &6ha votado por proyectiles: &a%s&6! &e¡%s votos!'
+  Events:
+    noEventSelected: '&6¡No se ha votado por eventos adicionales! Así que solo estará el evento: &eRelleno&6.'
+    eventSelected: '&6Evento seleccionado: &a%s'
+    playerVote: '&6¡&5%s &6Ha votado por evento adicional: &a%s&6! &e¡%s votos!'
+  Scenarios:
+    noScenariosSelected: '&6¡No se ha votado por un escenario! Así que, será una partida normal.'
+    scenarioSelected: '&6Se ha seleccionado el escenario: &a%s'
+    cleanScenarioKillMessage: '&a¡Has sido curado gracias al escenario de AntiClean!'
+    playerVote: '&6¡&5%s &6Ha votado por el escenario: &a%s&6! &e¡%s votos!'
+  Game:
+    Border:
+      title: '&4Cerrando Borde...'
+      subtitle: '&7¡Corre por tu vida!'
+    ArrowShoot:
+      - '&e%s ahora tiene &c%s &ede vida.'
+    Death:
+      Solo:
+        void:
+          - '&6%s &epensó que sobreviviría al vacío'
+          - '&6%s &epensó que el juego seguiría en el vació.'
+        fall:
+          - '&6%s &epensó que podía volar'
+          - '&6%s &ese rompío las piernas y murió.'
+        lava:
+          - '&6%s &epensó que era bueno nadar en lava.'
+          - '&6%s &epensó que la lava era su amiga.'
+          - '&6%s &ecreía que hacía un waterdrop, psdt: era lava.'
+        drowned:
+          - '&6%s &eno pudo aguantar la respiración bajo el agua.'
+          - '&6%s &ecreyó que era el pinshi Aquaman.'
+          - '&6%s &ese ahogó.'
+        general:
+          - '&6%s &emurió.'
+          - '&6%s &eha pasado a mejor vida. RIP'
+      Killed:
+        void:
+          - '&6%s &efue arrojado al vació por &c%s&e.'
+          - '&6%s &emurió en el vacio gracias a &c%s&e.'
+        fall:
+          - '&6%s &ese rompió las piernas mientras huía de &c%s&e.'
+          - '&6%s &emurió trantando de escapar de &c%s&e.'
+        lava:
+          - '&6%s &emurió quemado mientras escapaba de &c%s&e.'
+        projectile:
+          - '&6%s &emurió gracias al proyectil de &c%s&e.'
+        general:
+          - '&6%s &emurió a manos de &c%s&e.'
+
+tab:
+  prefix: '&e'
+  suffix: '%s'
+
+PlayAgain:
+  message:
+    header:
+      - ''
+      - '&eHas muerto, ¿qué quieres hacer?'
+    footer:
+      - ''
+
+Ranks:
+  voteforEvents: '&6Héroe'
+  voteforProj: '&aVIP'
+  voteforScenarios: '&aVIP'
+  menuGamesSelector: '&6Héroe'
+
+General:
+  dialogHowToClose: '&7Usa &aClick Izquierdo &7para cerrar el diálogo.'
+  dialogClosed: '&7Has &ccerrado &7este diálogo.'
+
+Dialogs:
+  ReportPlayer:
+    title: '&c&lReportes'
+    subtitle: '&7Proporciona tu razón de reporte'
+    actionBar: '&7Estás reportando a &c%player_name%'
+
+Party:
+  InvitationDuration: 30
+  LeaveParty: "&cHas salido de la fiesta."
+  ChatFormat: '&bParty ➸ &7%player% &e︳&r &f '
+  Chat:
+    DisableChat: "&cHas desactivado el chat de la fiesta correctamente"
+    ActiveChat: "&aHas activado el chat de la fiesta correctamente"
+  InviteLeader:
+    - ""
+    - "&aHaz invitado correctamente &b%player% &aa tu fiesta!"
+    - ""
+  Done_party: "&cEl jugador ya está en tu fiesta"
+  Already_party: "&cActualmente el jugador ya ha sido invitado a tu party"
+  Expiration: "&aTu invitación de party para &b%player% &aha expirado"
+  Accept:
+    name: "&a&lAceptar &8-"
+    lore: "&fClick para aceptar"
+  Deny:
+    name: "&c&lDenegar"
+    lore: "&fClick para Denegar"
+  InviteMessage:
+    - ""
+    - "&aHas sido invitado a la party de &b%owner_party%"
+    - "&aLa invitación expirará en &e%time% segundo(s)."
+    - ""
+  Unknown-Command: "&cComando desconocido, por favor use /party help."
+  MessageGeneral:
+    - ""
+    - "&7/%arg% invite &e<jugador> &8- &aInvita a alguien a tu party!"
+    - "&7/%arg% disband &8- &aDeshace la party"
+    - "&7/%arg% leave &8- &aSalir de la party"
+    - "&7/%arg% accept &8- &aAceptar una invitación"
+    - "&7/%arg% deny &8- &aDenegar una invitación"
+    - "&7/%arg% kick &e<jugador> &8- &aExpulsar a un jugador"
+    - "&7/%arg% info &8- &aInformación de la party"
+    - ""
+  NewLeader: '&b%player% &7es el nuevo líder'
+  PartyChat-Enabled: '&aSe ha activado el chat de la party'
+  PartyChat-Disabled: '&cSe ha deshabilitado el chat de la party'
+  NotinParty: '&cNo está en ninguna party'
+  Disband: '&cLa Party ha sido disuelta, a petición del líder'
+  Player-notConnected: '&cEl jugador no se encuentra conectado actualmente.'
+  OnlyTheLeader: '&cSolo él puede hacer eso.'
+  PlayerKicked: '&cEl jugador &b%player% &cha sido expulsado de la party.'
+  Usekick: "&aUsa: &f/party kick &b<jugador>"
+  Kicked: '&cHas sido pateado por %leader%'
+  Leader: '&aLíder: '
+  Members: '&aMiembros:'
+  NoInvitation: '&cNo tienes invitación, expiran en %time% segundos.'
+  UseInvite: "&aUsa: &f/party invite &b<jugador>"
+  Invitation-Accepted: '&7El jugador &b%player% &7ha aceptado tu invitación'
+  Invitation-Denied: '&7El jugador &b%player% &7ha rechazado tu invitación'
+  Invitation-Deny: '&7El jugador &b%player% &7ha rechazado la invitación'
+  NewMember: '&b%player% &7se ha unido a la party.'
+  Full: '&7Los jugadores maximos en la party es de &b%max%'
+  NotAvailable: '&cLa party no está disponible.'
+  Leave: '&cTe has ido de la party.'
+  HasLeave: '&b%player% &7ha dejado la party.'

@@ -1,0 +1,29 @@
+MenuSettings:
+  code: 'menuGames'
+  title: '&b&l・&8Selector de Partidas'
+  rows: 4
+
+Items:
+  SoloSkyWars:
+    material: BOW
+    data: 0
+    meta:
+      name: '&e&lSkyWars Solo'
+      lore:
+        - '&7Pelea con otros jugadores en el'
+        - '&7cielo, ¡solo no mires abajo! Para ganar'
+        - '&7debes ser el último jugador en pie.'
+        - '&7Simple, ¿cierto?'
+        - '&1 '
+        - '&bJugadores: &a<players>'
+        - '&bJugadores esperando: &a<wplayers>'
+        - '&bClick: &aEntra a un mapa aleatorio'
+        - '&bClick derecho: &aSelecciona un mapa'
+  MapSelector:
+    material: PAPER
+    data: 0
+    meta:
+      name: '&e&lSelector de Mapas'
+      lore:
+        - '&7Abre el selector con esto'
+        - '&7para seleccionar el mapa'
